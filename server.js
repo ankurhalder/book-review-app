@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const routes = require("./routes");
+const routes = require("./routes"); // Make sure routes.js is in the same directory
 
 const app = express();
 const port = process.env.PORT || 3000;
