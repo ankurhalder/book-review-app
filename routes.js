@@ -36,14 +36,14 @@ router.post(
 );
 router.put(
   "/reviews/:id",
-  middlewares.authenticateUser,
+  // middlewares.authenticateUser,
   controllers.addModifyBookReview
 );
 
 // Task 9: Delete book review added by that particular user - 2 Points
 router.delete(
   "/reviews/:id",
-  middlewares.authenticateUser,
+  // middlewares.authenticateUser,
   controllers.deleteBookReview
 );
 
@@ -53,7 +53,6 @@ router.delete(
 router.get(
   "/admin/books",
   middlewares.authenticateUser,
-  middlewares.checkAdminRole,
   controllers.getAllBooksAsync
 );
 
@@ -61,7 +60,6 @@ router.get(
 router.get(
   "/admin/books/isbn/:isbn",
   middlewares.authenticateUser,
-  middlewares.checkAdminRole,
   controllers.searchByISBN
 );
 
@@ -69,7 +67,6 @@ router.get(
 router.get(
   "/admin/books/author/:author",
   middlewares.authenticateUser,
-  middlewares.checkAdminRole,
   controllers.searchByAuthor
 );
 
@@ -77,7 +74,6 @@ router.get(
 router.get(
   "/admin/books/title/:title",
   middlewares.authenticateUser,
-  middlewares.checkAdminRole,
   controllers.searchByTitle
 );
 
