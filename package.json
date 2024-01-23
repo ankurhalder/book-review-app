@@ -1,0 +1,25 @@
+{
+  "name": "book-review",
+  "version": "1.0.0",
+  "description": "Book review ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ankurhalder/book-review-app.git"
+  },
+  "author": "Ankur Halder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankurhalder/book-review-app/issues"
+  },
+  "homepage": "https://github.com/ankurhalder/book-review-app#readme",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
